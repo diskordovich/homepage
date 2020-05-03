@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
     <title>Résumé</title>
+      <script type="text/javascript"> 
+          let hit = 'url("hit.png"), auto';
+          let stand = 'url("stand.png"), auto';
+          
+      </script>
   </head>
-  <body>
+  <body onmouseup="document.body.style.cursor=stand" onmousedown="document.body.style.cursor=hit">
+      
       <main>
+          
   <article>
+  	
     <div class="page" style="border-color: #950606;">
         <div class="stackable grid">
           <div class="row">
@@ -171,7 +179,7 @@
                     </li>
                     <li>
                         <p><em>1987</em></p>
-                        <p>Started working for <em style="color:orange">Capcom</em> project <em>"Street Fighter"</em>. My partner was <b>Ken Masters</b>, the boss'name was <b>Sagat</b>.</p>
+                        <p>Started working for <a style="cursor:url('stand.png'), auto " href="http://www.capcom-europe.com/"><em style="color:orange">Capcom</em></a> project <em>"Street Fighter"</em>. My partner was <b>Ken Masters</b>, the boss'name was <b>Sagat</b>.</p>
                     </li>
               </ul>
               <h3>PUBLICATIONS</h3>
@@ -234,4 +242,8 @@
   </article>
 </main>
   </body>
+    <script type="text/javascript"> 
+          
+          document.body.style.cursor = hit
+      </script>
 </html>
